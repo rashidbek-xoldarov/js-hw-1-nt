@@ -5,12 +5,12 @@ const elResetBtn = document.querySelector(".info-btn");
 
 elBtn.addEventListener("click", function (event) {
   event.preventDefault();
-  let work = false;
+  let work = 1;
   for (i = 0; i < input.length; i++) {
     if (input[i].value) {
-      work = true;
+      work *= 1;
     } else {
-      work = false;
+      work *= 0;
     }
   }
   if (work) {
